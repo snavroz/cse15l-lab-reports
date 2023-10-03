@@ -10,9 +10,9 @@
 - Lab2: 10/10
 - Lab3: 10/17
 
-1) Hot Dog
-2) Cheeseburger
-3) Pizza
+1. Hot Dog
+2. Cheeseburger
+3. Pizza
 
 End of this section
 ---
