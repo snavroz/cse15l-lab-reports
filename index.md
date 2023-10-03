@@ -17,14 +17,14 @@
 End of this section
 ---
 
-My code: 'print("C++ is terrible")'
+My code: `print("C++ is terrible")`
 
-'''
+```
 int abc = 10
 int test = 32
 System.out.println(abc + test)
 // prints out 42
-'''
+```
 
 [Takes you to other page on the website](https://snavroz.github.io/cse15l-lab-reports/labpage.html)
 
