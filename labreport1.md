@@ -25,7 +25,8 @@
 3. File as an argument ![Image](EX6.png)
 * The working directory when the command was run was the home directory.
 * The output was the terminal printing the path of the file that was given as an argument (lecture1/Hello.java). This was the output because Hello.java is not a directory, so ls just printed the file path as a file cannot contain other files or directories unlike a directory.
-* This output is not technically an error because it just prints the path and does not crash the terminal session, although ls was not given a directory as it is intended to recieve. 
+* This output is not technically an error because it just prints the path and does not crash the terminal session, although ls was not given a directory as it is intended to recieve.
+
 ## cat examples
 1. No arguments ![Image](EX7.png)
 * The working directory when the command was run was the home directory.
