@@ -10,7 +10,7 @@
 * The output is not an error because lecture1 is a valid directory in the workspace.
 3. File as an argument ![Image](EX3.png)
 * The working directory when the command was run was the home directory.
-* The output was the terminal printing that the file en-us.txt from the path lecture1/messages/en-us.txt is not a directory. This is the output because cd needs a valid directory to work because it needs to make the working directory the new directory given as an argument, but it cannot do so with a file (on this case a txt file).
+* The output was the terminal printing that the file en-us.txt from the path lecture1/messages/en-us.txt is not a directory. This is the output because cd needs a valid directory to work because it needs to make the working directory the new directory given as an argument, but it cannot do so with a file (in this case a txt file).
 * The output is expected, but technically an error because cd did not work. It did not work because en-us.txt is a file and cd needs a directory (not a file) to work.
 * 
 ## ls examples
