@@ -27,7 +27,7 @@
 * The output was the terminal printing the path of the file that was given as an argument (lecture1/Hello.java). This was the output because Hello.java is not a directory, so ls just printed the file path as a file cannot contain other files or directories unlike a directory.
 * This output is not technically an error because it just prints the path and does not crash the terminal session, although ls was not given a directory as it is intended to recieve. 
 ## cat examples
-1. No arguments ![Image](E7.png)
+1. No arguments ![Image](EX7.png)
 * The working directory when the command was run was the home directory.
 * There was no output as it went to the next line and got stuck with nothing printed. This happened because cat can only work with a file argument because it needs something to print to the terminal.
 * The output is an error because a valid file was not given, so cat could not print out any file.
