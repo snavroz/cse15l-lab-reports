@@ -54,7 +54,8 @@ public class StringServer {
 * **Path to private ssh key**
 
 ![Image](privatessh.png)
-* **Path to private ssh key**
+* **Path to public ssh key**
+
 ![Image](publicssh.png)
 * **Succesful login w/o password**
 
