@@ -51,9 +51,12 @@ public class StringServer {
 * From this specific request the stringInt int variable in the Handler class gets incremented by 1 and since it was already 1 from the first request it becomes 2 now. This is because the handleRequest method recieves the url and the first if statement is true because the url contained the path /add-message and then the nested if statement is also true because the first thing after the path and before the "=" was an "s" (param[0]). The param array of Strings was created by using the split variable and passing in the "=" so it could split up the string "s=How are you" into ["s", How are you"]. The string for the new line is added to the str String variable and it contains the newly incremented stringNum variable, the string in the query (param[0]), which is "How are you" in this case, and a new line, so the request changes the stringNum variable from an empty string ("") to "2. How are you\n".
 
 ## Part 2
-* **_Path to private ssh key** ![Image](privatessh.png)
-* **Path to private ssh key** ![Image](publicssh.png)
-* **Succesful login w/o password** ![Image](logged.png)
+* **Path to private ssh key**
+![Image](privatessh.png)
+* **Path to private ssh key**
+![Image](publicssh.png)
+* **Succesful login w/o password**
+![Image](logged.png)
 
 ## Part 3
 Something new I learned in lab the last couple weeks is that you are able to remotely access and control another computer using the ssh command. With this command I learned you can login to a computer remotely and use the normal terminal commands to modify and access files and directories. Also, I learned that you can securely transfer files to remote computers using the scp command, a file argument and the path from the remote computer of the transfer location.
