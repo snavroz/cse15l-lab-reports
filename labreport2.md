@@ -1,4 +1,4 @@
-# Lab Report 1 - Salman Navroz
+# Lab Report 2 - Salman Navroz
 ## Part 1
 ## StringServer.java
 ```
@@ -52,10 +52,12 @@ public class StringServer {
 
 ## Part 2
 * **Path to private ssh key**
+
 ![Image](privatessh.png)
 * **Path to private ssh key**
 ![Image](publicssh.png)
 * **Succesful login w/o password**
+
 ![Image](logged.png)
 
 ## Part 3
