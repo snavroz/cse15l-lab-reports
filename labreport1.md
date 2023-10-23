@@ -2,7 +2,8 @@
 ## cd examples
 1. No arguments ![Image](EX1.png)
 * The working directory when the command was run was the home directory.
-* There was no output because there was no argument/directory given for the cd command to move into. Therefore, the command did not do anything and stayed in the home directory. Based on other tests the cd command with no arguments makes the working directory the home directory.
+* There was no output because there was no argument/directory given for the cd command to move into. Therefore, the command did not do anything and stayed in the home directory. Based on other tests the cd command with no arguments makes the working directory the home directory (see screenshot below).
+    ![Image](newSS.png)
 * The output was not an error because it did not have any directory to go into, so it just stayed in the home directory.
 2. Directory as an argument ![Image](EX2.png)
 * The working directory when the command was run was the home directory.
@@ -24,7 +25,7 @@
 * The output is not an error because a valid directory was given and it listed all the appropriate files and folders in the directory.
 3. File as an argument ![Image](EX6.png)
 * The working directory when the command was run was the home directory.
-* The output was the terminal printing the path of the file that was given as an argument (lecture1/Hello.java). This was the output because Hello.java is not a directory, so ls just printed the file path as a file cannot contain other files or directories unlike a directory.
+* The output was the terminal printing the path of the file that was given as an argument (lecture1/Hello.java). This was the output because Hello.java is not a directory, so ls just printed the file path as a file cannot contain other files or directories unlike a directory. If the working directory is lecture1 and we run "ls Hello.java" the output would be "Hello.java" and not the absolute path.
 * This output is not technically an error because it just prints the path and does not crash the terminal session, although ls was not given a directory as it is intended to recieve.
 
 ## cat examples
@@ -34,7 +35,7 @@
 * The output is an error because a valid file was not given, so cat could not print out any file.
 2. Directory as an argument ![Image](EX8.png)
 * The working directory when the command was run was the home directory.
-* The output was a messaage saying that lecture1 is a directory. Essentially it is saying that cat needs a file and cannot do anything with a directory as an argument.
+* The output was a message saying that lecture1 is a directory. Essentially it is saying that cat needs a file and cannot do anything with a directory as an argument.
 * The output is an error message because cat cannot print a directory and needs a file as an argument to work.
 3. File as an argument ![Image](EX9.png)
 * The working directory when the command was run was the home directory.
