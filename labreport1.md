@@ -1,4 +1,4 @@
-# Lab Report 1 - Salman Navroz
+# Lab Report 1 - Salman Navroz 
 ## cd examples
 1. No arguments ![Image](EX1.png)
 * The working directory when the command was run was the home directory.
