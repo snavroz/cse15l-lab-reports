@@ -175,21 +175,7 @@ technical/plos/pmed.0020275.txt:restricted```
 	Output:
 
 
-        ```
-        subject to a potential bias. This review attempts to raise
-        the awareness of the problem and to provide some general
-        guidance to clinical trial practitioners.
- 	--
-        Some popular approaches are reviewed below.
-      
-      
-	--
-        models are available [ 16 17 18 ] ; a technical review can
-        be found, for example, in [ 19 ] and [ 20 ] . No general
-        computer programs are available to put them into effect.
-
-
-	```
+	![Image](grepA2.png)
 
 
 The -A2 option prints out the particular line or lines in the file given that contains the given string. It also prints out the 2 lines 	after the lines that contains that string. The number of lines printed after the line with the string printed is decided by the number after -A which is 2 in this example. This is useful if you want to see the given string in the context of the file.
@@ -199,22 +185,8 @@ The -A2 option prints out the particular line or lines in the file given that co
 	Output:
 
 
-```
-technical/plos/pmed.0020007.txt:        activities and jobs, leading to a chicken-and-egg dilemma for the interpretation of the
-technical/plos/pmed.0020007.txt-        relationship between mentally stimulating activities in adulthood and dementia risk.
-technical/plos/pmed.0020007.txt-        Cognitive training has demonstrable effects on performance, on views of self, and on brain
-technical/plos/pmed.0020007.txt-        function—but the results are very specific to the skills that are trained, and it is as yet
---
-technical/plos/pmed.0020206.txt:        invaluable type of around-the-clock support that he has called the “chicken soup of the
-technical/plos/pmed.0020206.txt-        Internet” [7].
-technical/plos/pmed.0020206.txt-        Working with several colleagues, I initiated an observational study to analyze the ways
-technical/plos/pmed.0020206.txt-        in which E-patients were using this new medium. Since I am an epilepsy specialist, we
---
-technical/plos/pmed.0020238.txt:        initially causes chickenpox. Although shingles usually resolves within a month, some people
-technical/plos/pmed.0020238.txt-        continue to feel the pain of PHN long after the rash and blisters heal, because of nerve
-technical/plos/pmed.0020238.txt-        damage (neuropathic pain) caused by the shingles. Not everyone who has had shingles
-technical/plos/pmed.0020238.txt-        develops PHN, although it is a common complication of shingles in older adults.
-```
+	![Image](grepA3.png)
+
 
   The -A option in this case prints out the line or lines in each file in the plos directory that contains the string "chicken" with the 3 lines after that particular line. The 3 lines is specified by the 3 after the -A in the command. This could be useful for find many different examples of how a piece of code is used in context or how a certain word is used in the context of a piece of writing.
 
