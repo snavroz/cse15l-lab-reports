@@ -55,7 +55,8 @@ After:
 
 * `-n` option
 	* `grep -n "trials" technical/biomed/1468-6708-3-3.txt`
-      Output: ```
+
+   Output: ```
 11:        disease. These trials found that when compared with
 19:        these trials did not assess the effect of lipid-lowering
 89:        prevention trials, the benefit of statin therapy was not
