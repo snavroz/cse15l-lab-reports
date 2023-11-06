@@ -54,7 +54,7 @@ After:
 ### We will be focusing on the options for the **grep** command.
 
 * `-n` option
-1. `grep -n "trials" technical/biomed/1468-6708-3-3.txt`
+	* `grep -n "trials" technical/biomed/1468-6708-3-3.txt`
       Output: ```
 11:        disease. These trials found that when compared with
 19:        these trials did not assess the effect of lipid-lowering
@@ -66,7 +66,7 @@ After:
 268:        trials will be carried out in this area. Future secondary```
 
     The -n option for the grep command prints out all of the lines of the given file with the given string argument, "trials" in this case, and includes the line number for each line. This is useful if you want to see the line number and contents of the line at the same time.
-2. `grep -n "Arizona" technical/911report/*.txt`
+	* `grep -n "Arizona" technical/911report/*.txt`
       Output:
       ![Image](grepn.png)
     The -n option prints out all of the lines with the given string in each txt file in the 911report directory with the corresponding line number before each line. In this case it's useful if you want to see every line and line number in a directory that contains the specific string. 
