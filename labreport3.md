@@ -190,7 +190,7 @@ technical/plos/pmed.0020275.txt:restricted```
 	![Image](grepA3.png)
 
 
-	The -A option in this case prints out the line or lines 	in each file in the plos directory that contains the 		string "chicken" with the 3 lines after that particular 	line. The 3 lines is specified by the 3 after the -A in 	the command. This could be useful for find many 		different examples of how a piece of code is used in 		context or how a certain word is used in the context of 	a piece of writing.
+	The -A option in this case prints out the line or lines 	in each file in the plos directory that contains the 		string "chicken" with the 3 lines after that particular 	line. The 3 lines is specified by the 3 after the -A in 	the command. This could be useful for finding many 		different examples of how a piece of code is used in 		context or how a certain word is used in the context of 	a piece of writing.
 
 
 ## Citation: All of these options were found at [https://www.geeksforgeeks.org/grep-command-in-unixlinux](https://www.geeksforgeeks.org/grep-command-in-unixlinux)
