@@ -181,7 +181,7 @@ technical/plos/pmed.0020275.txt:restricted```
 The -A2 option prints out the particular line or lines in the file given that contains the given string. It also prints out the 2 lines after the lines that contains that string. The number of lines printed after the line with the string printed is decided by the number after -A which is 2 in this example. This is useful if you want to see the given string in the context of the file.
 
 
-	* `grep -A2 "review" technical/biomed/1468-6708-3-4.txt`
+	* grep -A2 "review" technical/biomed/1468-6708-3-4.txt`
 
 
 	Output:
