@@ -56,7 +56,8 @@ After:
 * `-n` option
 	* `grep -n "trials" technical/biomed/1468-6708-3-3.txt`
 
-   Output: ```
+   Output:
+```
 11:        disease. These trials found that when compared with
 19:        these trials did not assess the effect of lipid-lowering
 89:        prevention trials, the benefit of statin therapy was not
@@ -64,7 +65,8 @@ After:
 149:        Nevertheless, a number of trials have established the
 153:        recent trials have suggested that higher risk patients with
 259:        and the A-2-Z trials, this study will not assess the
-268:        trials will be carried out in this area. Future secondary```
+268:        trials will be carried out in this area. Future secondary
+```
 
     The -n option for the grep command prints out all of the lines of the given file with the given string argument, "trials" in this case, and includes the line number for each line. This is useful if you want to see the line number and contents of the line at the same time.
 	* `grep -n "Arizona" technical/911report/*.txt`
