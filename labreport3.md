@@ -82,8 +82,12 @@ The -n option prints out all of the lines with the given string in each txt file
 
 
    The -l option prints out which files of the given files contains the string or pattern given which is "chicken" in this case and there is only file given as an argument in this case. The file given does not contain the "chicken" string, so no files are printed.
- 	* `grep -l "happy" technical/plos/*.txt`
-      Output:
+
+
+	* `grep -l "happy" technical/plos/*.txt`
+	
+
+  	Output:
 
   
 ```
@@ -108,7 +112,10 @@ technical/plos/pmed.0020209.txt
 	* `grep -o "dementia" technical/plos/pmed.0020275.txt`
 
 
-   Output: ```
+	Output:
+
+
+   ```
 dementia
 dementia
 dementia
@@ -180,7 +187,9 @@ technical/plos/pmed.0020275.txt:restricted```
         models are available [ 16 17 18 ] ; a technical review can
         be found, for example, in [ 19 ] and [ 20 ] . No general
         computer programs are available to put them into effect.
-	 ```
+
+
+	```
 
 
 The -A2 option prints out the particular line or lines in the file given that contains the given string. It also prints out the 2 lines 	after the lines that contains that string. The number of lines printed after the line with the string printed is decided by the number after -A which is 2 in this example. This is useful if you want to see the given string in the context of the file.
@@ -188,6 +197,8 @@ The -A2 option prints out the particular line or lines in the file given that co
 
 
 	Output:
+
+
 ```
 technical/plos/pmed.0020007.txt:        activities and jobs, leading to a chicken-and-egg dilemma for the interpretation of the
 technical/plos/pmed.0020007.txt-        relationship between mentally stimulating activities in adulthood and dementia risk.
