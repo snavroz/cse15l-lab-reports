@@ -80,10 +80,13 @@ The -n option prints out all of the lines with the given string in each txt file
 
     	Output: `NONE`
 
-    	The -l option prints out which files of the given files contains the string or pattern given which is "chicken" in this case and there is only file given as an argument in this case. The file given does not contain the "chicken" string, so no files are printed.
-  2. `grep -l "happy" technical/plos/*.txt`
+
+   The -l option prints out which files of the given files contains the string or pattern given which is "chicken" in this case and there is only file given as an argument in this case. The file given does not contain the "chicken" string, so no files are printed.
+ 	* `grep -l "happy" technical/plos/*.txt`
       Output:
-      ```
+
+  
+```
 technical/plos/journal.pbio.0020053.txt
 technical/plos/journal.pbio.0020140.txt
 technical/plos/journal.pbio.0020164.txt
@@ -94,14 +97,18 @@ technical/plos/pmed.0010052.txt
 technical/plos/pmed.0020118.txt
 technical/plos/pmed.0020158.txt
 technical/plos/pmed.0020203.txt
-technical/plos/pmed.0020209.txt```
+technical/plos/pmed.0020209.txt
+```
+
 
   The -l option looks through the given text files and if it contains the string argument that was given in the command, it prints out the text 
  file. In this case it takes in all of the txt files of the plos directory as an argument and prints out all of the files that contain the string "happy" in the directory.
 
 * `-o` option
-  1. `grep -o "dementia" technical/plos/pmed.0020275.txt`
-      Output: ```
+	* `grep -o "dementia" technical/plos/pmed.0020275.txt`
+
+
+   Output: ```
 dementia
 dementia
 dementia
@@ -114,11 +121,17 @@ dementia
 dementia
 dementia
 dementia
-dementia```
+dementia
+```
+
 
     The -o option prints out the first instance of the given string in each line in the given file. This file in particular had 13 lines that contained the string "dementia", so dementia was printed 13 times. This is useful if you don't need to store the entire line and just want to use grep to count the number of line that contains the string, saving storage in the process.
-  2. `grep -o "restricted" technical/plos/pmed*.txt`
+	* `grep -o "restricted" technical/plos/pmed*.txt`
+
+
       Output:
+
+
       ```
 technical/plos/pmed.0010008.txt:restricted
 technical/plos/pmed.0010023.txt:restricted
@@ -145,19 +158,20 @@ technical/plos/pmed.0020231.txt:restricted
 technical/plos/pmed.0020231.txt:restricted
 technical/plos/pmed.0020275.txt:restricted```
 
-  For each line that contains the string "restricted" in the pmed directory, restricted is printed. This could be useful if you want to see the 
-  total number of lines in a directory that contains a particular string.
+
+  For each line that contains the string "restricted" in the pmed directory, restricted is printed. This could be useful if you want to see the total number of lines in a directory that contains a particular string.
 
 * `-A[NumberOfLines(n)]` option
-  1. `grep -A2 "review" technical/biomed/1468-6708-3-4.txt`
-       Output:
+	* `grep -A2 "review" technical/biomed/1468-6708-3-4.txt`
+
+
+	Output:
+
+
         ```
         subject to a potential bias. This review attempts to raise
         the awareness of the problem and to provide some general
         guidance to clinical trial practitioners.
-        ```
-        ```
-	```
  	--
         Some popular approaches are reviewed below.
       
@@ -168,9 +182,12 @@ technical/plos/pmed.0020275.txt:restricted```
         computer programs are available to put them into effect.
 	 ```
 
+
 The -A2 option prints out the particular line or lines in the file given that contains the given string. It also prints out the 2 lines 	after the lines that contains that string. The number of lines printed after the line with the string printed is decided by the number after -A which is 2 in this example. This is useful if you want to see the given string in the context of the file.
-  2. `grep -A3 "chicken" technical/plos/*.txt`
-      Output:
+	* `grep -A3 "chicken" technical/plos/*.txt`
+
+
+	Output:
 ```
 technical/plos/pmed.0020007.txt:        activities and jobs, leading to a chicken-and-egg dilemma for the interpretation of the
 technical/plos/pmed.0020007.txt-        relationship between mentally stimulating activities in adulthood and dementia risk.
@@ -188,9 +205,7 @@ technical/plos/pmed.0020238.txt-        damage (neuropathic pain) caused by the 
 technical/plos/pmed.0020238.txt-        develops PHN, although it is a common complication of shingles in older adults.
 ```
 
-  The -A option in this case prints out the line or lines in each file in the plos directory that contains the string "chicken" with the 3 
-  lines after that particular line. The 3 lines is specified by the 3 after the -A in the command. This could be useful for find many different 
-  examples of how a piece of code is used in context or how a certain word is used in the context of a piece of writing.
+  The -A option in this case prints out the line or lines in each file in the plos directory that contains the string "chicken" with the 3 lines after that particular line. The 3 lines is specified by the 3 after the -A in the command. This could be useful for find many different examples of how a piece of code is used in context or how a certain word is used in the context of a piece of writing.
 
  
   
