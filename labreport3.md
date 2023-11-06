@@ -70,15 +70,17 @@ After:
 
     The -n option for the grep command prints out all of the lines of the given file with the given string argument, "trials" in this case, and includes the line number for each line. This is useful if you want to see the line number and contents of the line at the same time.
 	* `grep -n "Arizona" technical/911report/*.txt`
+      
       Output:
-      ![Image](grepn.png)
-    The -n option prints out all of the lines with the given string in each txt file in the 911report directory with the corresponding line number before each line. In this case it's useful if you want to see every line and line number in a directory that contains the specific string. 
+![Image](grepn.png)
+The -n option prints out all of the lines with the given string in each txt file in the 911report directory with the corresponding line number before each line. In this case it's useful if you want to see every line and line number in a directory that contains the specific string. 
 
 * `-l` option
-  1. `grep -l "chicken" technical/biomed/1468-6708-3-3.txt`
-      Output: `NONE`
+	* `grep -l "chicken" technical/biomed/1468-6708-3-3.txt`
 
-    The -l option prints out which files of the given files contains the string or pattern given which is "chicken" in this case and there is only file given as an argument in this case. The file given does not contain the "chicken" string, so no files are printed.
+    	Output: `NONE`
+
+    	The -l option prints out which files of the given files contains the string or pattern given which is "chicken" in this case and there is only file given as an argument in this case. The file given does not contain the "chicken" string, so no files are printed.
   2. `grep -l "happy" technical/plos/*.txt`
       Output:
       ```
