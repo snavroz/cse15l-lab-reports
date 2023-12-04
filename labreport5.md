@@ -4,8 +4,8 @@
 
 ### 1. Student Post
 
-Hello, I am struggling with getting the test class to run with JUnit for my grading script. The error is states `Error: Could not find or load main class org.junit.runner.JUnitCore
-Caused by: java.lang.ClassNotFoundException: org.junit.runner.JUnitCore`. This is confusing to me because I used the path for lib that we have always used in class to access and run Junit tests and I can see `lib` in my project directory, but it is still giving me this error. Is the problem potenitally because my script runs `cd` into the `grading-area` directory which does not contain the `lib` directory?
+Hello, I am struggling with getting the test class to run with JUnit for my grading script. The error states `Error: Could not find or load main class org.junit.runner.JUnitCore
+Caused by: java.lang.ClassNotFoundException: org.junit.runner.JUnitCore`. This is confusing to me because I used the same path for lib that we have always used in class to access and run Junit tests and I can see `lib` in my project directory, but it is still giving me this error. Is the problem potentially because my script runs `cd` into the `grading-area` directory which does not contain the `lib` directory as a subdirectory?
 
 ![Image](StudentG.png)
 
