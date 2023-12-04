@@ -15,7 +15,7 @@ Yes, you are correct that the `lib` directory is not a subdirectory in the `grad
 
 ### 3. Student Bug Fix Result
 
-The bug is that the path used for the `lib` directory, which is needed to run the JUnit classes, which are needed for the `TestListExamples` class, is accessing a `lib` directory from the current directory (`grading-area`). In other words, the absolute path of the jar files that the java command is trying to run are `list-examples-grader/grading-area/lib/hamcrest-core-1.3.jar` and `list-examples-grader/grading-areal/lib/junit-4.13.2.jar`. There is no `lib` directory in the `grading-area` directory, so this is the wrong path. The correct absolute path of `lib` that we want is `list-examples-grader/lib` because `lib` is inside of the project directory `list-examples-grader`.
+The bug is that the path used for the `lib` directory, which is needed to run the JUnit classes, which are needed for the `TestListExamples` class, is accessing a `lib` directory from the current directory (`grading-area`). In other words, the absolute path of the jar files that the java command is trying to run are `list-examples-grader/grading-area/lib/hamcrest-core-1.3.jar` and `list-examples-grader/grading-area/lib/junit-4.13.2.jar`. There is no `lib` directory in the `grading-area` directory, so this is the wrong path. The correct absolute path of `lib` that we want is `list-examples-grader/lib` because `lib` is inside of the project directory `list-examples-grader`.
 
 ![Image](StudentB.png)
 
