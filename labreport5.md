@@ -5,17 +5,17 @@
 ### 1. Student Post
 
 Hello, I am struggling with getting the test class to run with JUnit for my grading script. The error states `Error: Could not find or load main class org.junit.runner.JUnitCore
-Caused by: java.lang.ClassNotFoundException: org.junit.runner.JUnitCore`. This is confusing to me because I used the same path for lib that we have always used in class to access and run Junit tests and I can see `lib` in my project directory, but it is still giving me this error. Is the problem potentially because my script runs `cd` into the `grading-area` directory which does not contain the `lib` directory as a subdirectory?
+Caused by: java.lang.ClassNotFoundException: org.junit.runner.JUnitCore`. This is confusing to me because I used the same path for `lib` that we have always used in class to access and run Junit tests and I can see `lib` in my project directory, but it is still giving me this error. Is the problem potentially because my script runs `cd` into the `grading-area` directory which does not contain the `lib` directory as a subdirectory?
 
 ![Image](StudentG.png)
 
 ### 2. TA Response
 
-Yes, you are correct that the lib directory is not in the grading-area directory which is most likely why you are getting the error that the JUnit class cannot be found. Think about how `..` and `../` can be used to access files from the parent directory of a directory. What is the path of the `lib` directory relative to the `grading-area` directory? Try using the relative path of lib.
+Yes, you are correct that the lib directory is not a subdirectory in the grading-area directory which is most likely why you are getting the error that the JUnit class cannot be found. Think about how `..` and `../` can be used to access files from the parent directory of a directory. What is the path of the `lib` directory relative to the `grading-area` directory? Try using the relative path of `lib`.
 
 ### 3. Student Bug Fix Result
 
-The bug is that the path used for the lib directory which is needed to run the JUnit classes which are needed for the TestListExamples class is accessing a lib directory from the current directory. There is no lib directory in the grading-area directory, so this is the wrong path. 
+The bug is that the path used for the `lib` directory which is needed to run the JUnit classes which are needed for the `TestListExamples` class is accessing a `lib` directory from the current directory. There is no `lib` directory in the `grading-area` directory, so this is the wrong path. 
 
 ![Image](StudentB.png)
 
