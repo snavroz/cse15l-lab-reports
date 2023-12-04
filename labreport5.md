@@ -23,7 +23,7 @@ The bug is that the path used for the `lib` directory, which is needed to run th
 
 - Directory Structure:
 
-![Image](DRCT.png)
+![Image](DRCT2.png)
 
 - File Contents Before Bug Fix
 
