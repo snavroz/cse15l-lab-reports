@@ -38,3 +38,7 @@ The bug is that the path used for the lib directory which is needed to run the J
 - The command run inside the grade.sh file that triggered the bug was `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples | grep -m 1 -A1 "JUnit" > results.txt`. The command ran to run `grade.sh` with the student's repository url that needed to be graded was `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`.
  
 - The actual lib directory is inside the parent directory (the project directory), so we need to put a ../ before the path to go back one directory into the parent directory to access the correct `lib` directory. The correct path is now `../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar:.` which allows the grading script to succesfully run JUnit and the whole script as a whole becuase it succesfully accesses the hamcrest-core-1.3.jar and junit-4.13.2.jar files from the correct lib directory.  
+
+## Part 2 - Reflection
+
+One thing I learned from my lab experience was how to use vim. I learned many commands that are needed to properly use vim and that vim is a good tool to use if you want to edit a file directly from the command line or if you do not have access to a file editor application (e.g., when accessing a remote computer file).
