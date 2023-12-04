@@ -11,7 +11,7 @@ Caused by: java.lang.ClassNotFoundException: org.junit.runner.JUnitCore`. This i
 
 ### 2. TA Response
 
-Yes, you are correct that the `lib` directory is not a subdirectory in the grading-area directory which is most likely why you are getting the error that the JUnit class cannot be found. Think about how `..` and `../` can be used to access files from the parent directory of a directory. What is the path of the `lib` directory relative to the `grading-area` directory? Try using the relative path of `lib`.
+Yes, you are correct that the `lib` directory is not a subdirectory in the `grading-area` directory which is most likely why you are getting the error that the JUnit class cannot be found. Think about how `..` and `../` can be used to access files from the parent directory of a directory. What is the path of the `lib` directory relative to the `grading-area` directory? Try using the relative path of `lib`.
 
 ### 3. Student Bug Fix Result
 
