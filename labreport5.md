@@ -11,7 +11,7 @@ Caused by: java.lang.ClassNotFoundException: org.junit.runner.JUnitCore`. This i
 
 ### 2. TA Response
 
-Yes, you are correct that the lib directory is not a subdirectory in the grading-area directory which is most likely why you are getting the error that the JUnit class cannot be found. Think about how `..` and `../` can be used to access files from the parent directory of a directory. What is the path of the `lib` directory relative to the `grading-area` directory? Try using the relative path of `lib`.
+Yes, you are correct that the `lib` directory is not a subdirectory in the grading-area directory which is most likely why you are getting the error that the JUnit class cannot be found. Think about how `..` and `../` can be used to access files from the parent directory of a directory. What is the path of the `lib` directory relative to the `grading-area` directory? Try using the relative path of `lib`.
 
 ### 3. Student Bug Fix Result
 
@@ -33,11 +33,11 @@ The bug is that the path used for the `lib` directory which is needed to run the
 
   `grade.sh`:
 
-  ![Image](GRD.png)
+  ![Image](GRD3.png)
 
 - The command run inside the grade.sh file that triggered the bug was `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples | grep -m 1 -A1 "JUnit" > results.txt`. The command ran to run `grade.sh` with the student's repository url that needed to be graded was `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`.
  
-- The actual lib directory is inside the parent directory (the project directory), so we need to put a ../ before the path to go back one directory into the parent directory to access the correct `lib` directory. The correct path is now `../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar:.` which allows the grading script to succesfully run JUnit and the whole script as a whole becuase it succesfully accesses the hamcrest-core-1.3.jar and junit-4.13.2.jar files from the correct lib directory.  
+- The actual `lib` directory is inside the parent directory (the project directory, `list-examples-grader`), so we need to put a ../ before the path to go back one directory into the parent directory to access the correct `lib` directory. The correct path is now `../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar:.` which allows the grading script to succesfully run JUnit and the whole script as a whole becuase it succesfully accesses the hamcrest-core-1.3.jar and junit-4.13.2.jar files from the correct `lib` directory.  
 
 ## Part 2 - Reflection
 
